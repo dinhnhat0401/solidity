@@ -67,3 +67,15 @@ wallets & contracts can hold fund
 
 reverting: undo action & send remaining gas back.
 
+### Send money from smartcontract
+
+- transfer
+payable(msg.sender).transfer(adderss(this).balance)
+- Send
+bool sendSuccess = payable(msg.sender).send(address(this).balance);
+require(sendSuccess, "Send failed")
+- call
+lower level command. call virtually any functions.
+(bool callSuccess, bytes memory  dataReturned) = payable(msg.sender).call{value: address(this).balance}("")
+
+
