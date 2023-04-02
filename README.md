@@ -43,5 +43,23 @@ a view function disallow modification of states.
 view function doesn't cost gas to execute.
         // retrieve() call view function inside this non-view will case this to consume more gas.
 
+### EVM Overview
 
+Calldata, memory, storage
+
+calldata: temporary immuatable data type,
+memory: temporary variable can be modify
+storage: permanent var, can be modified
+
+struct, map need to have calldata or memory
+
+single file can have muultiple contracts
+
+import another contract
+import "./SimpleStorage.sol";
+
+### Inheritance/override
+
+Contract2 is Contract1 : inheritance
+function needs to have virtual keyword to be overridable
 
