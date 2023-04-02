@@ -63,3 +63,7 @@ import "./SimpleStorage.sol";
 Contract2 is Contract1 : inheritance
 function needs to have virtual keyword to be overridable
 
+wallets & contracts can hold fund
+
+reverting: undo action & send remaining gas back.
+
