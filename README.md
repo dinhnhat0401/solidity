@@ -84,6 +84,8 @@ constant, immutable
 
 or customized error
 
+Solidity special functions without function keyword: receive, fallback
+
 Enums
 Events
 Try/Catch
