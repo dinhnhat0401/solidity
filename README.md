@@ -78,4 +78,16 @@ require(sendSuccess, "Send failed")
 lower level command. call virtually any functions.
 (bool callSuccess, bytes memory  dataReturned) = payable(msg.sender).call{value: address(this).balance}("")
 
+- gas optimize
 
+constant, immutable
+
+or customized error
+
+Enums
+Events
+Try/Catch
+Fucntion selector
+abi.encode / decode
+hasing
+Yul / assembly
